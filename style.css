@@ -1,0 +1,152 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans',sans-serif;
+    color: floralwhite;
+}
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    padding-top: 15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000
+}
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.navi {
+    margin-left: 700px;
+
+}
+.opp {
+    letter-spacing: 3px; /* ростояние между буквами*/
+     text-decoration: none;
+   color: white;
+    margin: 0px 20px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    vertical-align: top; 
+    display: inline-block;
+    transition: color .1s linear;
+    font-family: Arial;
+}
+.opp:hover{
+    color: #ffeb00;
+}
+.opp:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+.opp:hover:after, /* posle elementd ,bedety voteto*/
+.opp.active:after {
+    opacity: 1;
+}
+.opp.active {
+    color: #fce38a;
+}
+.intro {
+  display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+
+    background: url("imege/les_tuman_olen_129931_1920x1080.jpg") center no-repeat;
+    background-size: cover;  
+}
+.intro_inner {
+      width: 100%;
+      max-width: 1100px;
+      margin:  100 auto 0;
+       margin-left: 60px;
+      text-align: center;
+}
+.hello {
+      font-family: Montserrat,  'Open Sans',sans-serif;
+   letter-spacing: 5px;
+   font-size: 140px;
+   font-weight: 700;
+   line-height: 1;
+    margin-top: 120px; 
+    
+}
+.btn {
+
+    vertical-align: top;
+    padding: 8px 30px;
+    letter-spacing: 1px;
+    border: 3px solid #fff;
+
+    margin-top: 300px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f4f4f4;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+.btn:hover {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+.web {
+    font-family: Kaushan Script; 
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.thagolovok {
+    font-family: Kaushan Script;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 40px;
+
+}
+.text {
+    font-family: sans-serif;
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
+}
+.abot {
+    font-family: Kaushan Script;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 30px;
+    margin-right: 0px;
+}
+.tesw {
+    font-family: Kaushan Script;
+}
