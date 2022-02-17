@@ -74,7 +74,7 @@ body {
 .opp.active {
     color: #fce38a;
 }
-body {
+.intro {
   display: flex;
     flex-direction: column; 
     width: 100%;
